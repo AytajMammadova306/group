@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GroupWork")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13a1776d24973c3a1be4fb670b5341bb30f99606")]
 [assembly: System.Reflection.AssemblyProductAttribute("GroupWork")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GroupWork")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

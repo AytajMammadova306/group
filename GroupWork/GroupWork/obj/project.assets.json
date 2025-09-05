@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\academy\\CLASS\\GroupWork\\GroupWork\\GroupWork.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\academy\\CLASS\\group\\GroupWork\\GroupWork\\GroupWork.csproj",
       "projectName": "GroupWork",
-      "projectPath": "C:\\Users\\User\\Desktop\\academy\\CLASS\\GroupWork\\GroupWork\\GroupWork.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\academy\\CLASS\\group\\GroupWork\\GroupWork\\GroupWork.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\academy\\CLASS\\GroupWork\\GroupWork\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\academy\\CLASS\\group\\GroupWork\\GroupWork\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
