@@ -14,16 +14,28 @@ namespace GroupWork
             //Helper.Helper.Binary();
             //Helper.Helper.Anaqram();
             //Helper.Helper.Factorial();
-            Helper.Helper.Difference([1,2,3]);
-            Helper.Helper.IsOdd();
-            Helper.Helper.CustomSum();
-            Helper.Helper.EvenOddDifference([1,2,3,4]);
-            //5)Sozlerin ardicilligini res et.
+            //Helper.Helper.Difference([1,2,3]);
+            //Helper.Helper.IsOdd();
+            //Helper.Helper.CustomSum();
+            //Helper.Helper.EvenOddDifference([1,2,3,4]);
+            ////5)Sozlerin ardicilligini res et.
 
-            string cumle = "Salam dunya";
-            string ters = Ters(cumle);
+            //string cumle = "Salam dunya";
+            //string ters = Ters(cumle);
 
-            Console.WriteLine(ters);
+            //Console.WriteLine(ters);
+            //Helper.Helper.GetPolidrom();
+            //Helper.Helper.SezarFoward();
+            //Helper.Helper.SezarBack();
+            //Helper.Helper.SumList();
+            //Helper.Helper.Sum15();
+            //Helper.Helper.Binary();
+            //Helper.Helper.Anaqram();
+            //Helper.Helper.Factorial();
+            //Helper.Helper.Difference(1, 2, 4, 3, 5);
+            //Helper.Helper.IsOdd();
+            //Helper.Helper.CustomSum(1,2,3,4, -5);
+            //Console.WriteLine(Helper.Helper.EvenOddDifference(1, 2, 3, 3, 3, 3, 3, -3 ));
 
         }
         static string Ters(string cumle)

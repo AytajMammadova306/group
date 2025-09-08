@@ -12,3 +12,18 @@ C:\Users\User\Desktop\academy\CLASS\GroupWork\GroupWork\obj\Debug\net8.0\refint\
 C:\Users\User\Desktop\academy\CLASS\GroupWork\GroupWork\obj\Debug\net8.0\GroupWork.pdb
 C:\Users\User\Desktop\academy\CLASS\GroupWork\GroupWork\obj\Debug\net8.0\GroupWork.genruntimeconfig.cache
 C:\Users\User\Desktop\academy\CLASS\GroupWork\GroupWork\obj\Debug\net8.0\ref\GroupWork.dll
+C:\Users\Ravan Guliyev\Desktop\Teamworks\powerpuff\GroupWork\GroupWork\bin\Debug\net8.0\GroupWork.exe
+C:\Users\Ravan Guliyev\Desktop\Teamworks\powerpuff\GroupWork\GroupWork\bin\Debug\net8.0\GroupWork.deps.json
+C:\Users\Ravan Guliyev\Desktop\Teamworks\powerpuff\GroupWork\GroupWork\bin\Debug\net8.0\GroupWork.runtimeconfig.json
+C:\Users\Ravan Guliyev\Desktop\Teamworks\powerpuff\GroupWork\GroupWork\bin\Debug\net8.0\GroupWork.dll
+C:\Users\Ravan Guliyev\Desktop\Teamworks\powerpuff\GroupWork\GroupWork\bin\Debug\net8.0\GroupWork.pdb
+C:\Users\Ravan Guliyev\Desktop\Teamworks\powerpuff\GroupWork\GroupWork\obj\Debug\net8.0\GroupWork.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ravan Guliyev\Desktop\Teamworks\powerpuff\GroupWork\GroupWork\obj\Debug\net8.0\GroupWork.AssemblyInfoInputs.cache
+C:\Users\Ravan Guliyev\Desktop\Teamworks\powerpuff\GroupWork\GroupWork\obj\Debug\net8.0\GroupWork.AssemblyInfo.cs
+C:\Users\Ravan Guliyev\Desktop\Teamworks\powerpuff\GroupWork\GroupWork\obj\Debug\net8.0\GroupWork.csproj.CoreCompileInputs.cache
+C:\Users\Ravan Guliyev\Desktop\Teamworks\powerpuff\GroupWork\GroupWork\obj\Debug\net8.0\GroupWork.sourcelink.json
+C:\Users\Ravan Guliyev\Desktop\Teamworks\powerpuff\GroupWork\GroupWork\obj\Debug\net8.0\GroupWork.dll
+C:\Users\Ravan Guliyev\Desktop\Teamworks\powerpuff\GroupWork\GroupWork\obj\Debug\net8.0\refint\GroupWork.dll
+C:\Users\Ravan Guliyev\Desktop\Teamworks\powerpuff\GroupWork\GroupWork\obj\Debug\net8.0\GroupWork.pdb
+C:\Users\Ravan Guliyev\Desktop\Teamworks\powerpuff\GroupWork\GroupWork\obj\Debug\net8.0\GroupWork.genruntimeconfig.cache
+C:\Users\Ravan Guliyev\Desktop\Teamworks\powerpuff\GroupWork\GroupWork\obj\Debug\net8.0\ref\GroupWork.dll

@@ -11,12 +11,14 @@ namespace GroupWork.Helper
 {
     internal static class Helper
     {
+        #region Task3
         public static void GetPolidrom()
         {
-            //Aytac
+            // Aytac
             string finale = string.Empty;
             Console.WriteLine("Enter text");
             string str = Console.ReadLine().Trim();
+
             for (int i = 0; i < str.Length - 1; i++)
             {
                 if (str[i] == ' ' && str[i + 1] == ' ')
@@ -25,6 +27,7 @@ namespace GroupWork.Helper
                     i = 0;
                 }
             }
+
             string[] words = str.Split(" ");
             foreach (string word in words)
             {
@@ -33,13 +36,21 @@ namespace GroupWork.Helper
                 {
                     sb.Append(word[i]);
                 }
+
                 if (word == sb.ToString()) finale = finale + word + " ";
             }
+
             Console.WriteLine(finale);
         }
+
+        // Qiymətləndirmə:
+        // Nəticə: 10/10
+        #endregion
+
+        #region Task17
         public static void SezarFoward()
         {
-            //aytac
+            // Aytac
             StringBuilder sb = new StringBuilder();
             do
             {
@@ -50,6 +61,7 @@ namespace GroupWork.Helper
                 string str = Console.ReadLine().Trim();
                 bool result = int.TryParse(str, out num);
                 if (result == false) continue;
+
                 for (int i = 0; i < text.Length - 1; i++)
                 {
                     if (text[i] == ' ' && text[i + 1] == ' ')
@@ -58,9 +70,13 @@ namespace GroupWork.Helper
                         i = 0;
                     }
                 }
+
                 foreach (char c in text)
                 {
-                    if (char.IsDigit(c) || c == ' ') continue;
+                    if (char.IsDigit(c) || c == ' ') continue; // rəqəm və boşluqları atlayır
+
+                    // ASCII limitlərinin düzgün yoxlanışı səhvdir:
+                    // (c + num > 90 || c + num < 122) şərti yanlışdır, hərflərin kiçik/böyük aralığını dəqiq nəzərə almır.
                     if (c + num > 90 || c + num < 122)
                     {
                         sb.Append((char)(c - 26 + num));
@@ -72,11 +88,20 @@ namespace GroupWork.Helper
                 }
                 break;
             } while (true);
+
             Console.WriteLine(sb.ToString());
         }
+
+        // Qiymətləndirmə:
+        // - ASCII limitləri səhv yoxlanılıb, acz 2 verəndə IKb hərfləri səhv şifrələnir.
+        // - Rəqəmləri tam atır, amma tapşırıqda sadəcə hərfləri şifrələmək lazım idi (rəqəmlər dəyişmədən qalmalı idi).
+        // Nəticə: 15/30
+        #endregion
+
+        #region Task18
         public static void SezarBack()
         {
-            //aytac
+            // Aytac
             StringBuilder sb = new StringBuilder();
             do
             {
@@ -87,6 +112,7 @@ namespace GroupWork.Helper
                 string str = Console.ReadLine().Trim();
                 bool result = int.TryParse(str, out num);
                 if (result == false) continue;
+
                 for (int i = 0; i < text.Length - 1; i++)
                 {
                     if (text[i] == ' ' && text[i + 1] == ' ')
@@ -95,9 +121,11 @@ namespace GroupWork.Helper
                         i = 0;
                     }
                 }
+
                 foreach (char c in text)
                 {
                     if (char.IsDigit(c) || c == ' ') continue;
+
                     if (c - num < 65 || c - num < 97)
                     {
                         sb.Append((char)(c + 26 - num));
@@ -109,8 +137,21 @@ namespace GroupWork.Helper
                 }
                 break;
             } while (true);
+
             Console.WriteLine(sb.ToString());
         }
+
+        // Qiymətləndirmə:
+        // - ASCII limitləri səhv yoxlanılıb: (c - num < 65 || c - num < 97) bütün halları əhatə etmir.
+        // - Rəqəmlər və boşluqlar atlanır, amma tapşırıqda dəyişmədən saxlanmalı idi.
+        // - İdeya düzgündür (c - num istifadə edir), amma implementasiya səhvdir.
+        // - Böyük/kiçik hərfləri düzgün ayırmır.
+        // ABC shift 2 verərək yoxlaya bilərsiz
+        // Nəticə: 20/30
+        #endregion
+
+
+        #region Task13
         public static void SumList()
         {
             //aytac
@@ -137,6 +178,7 @@ namespace GroupWork.Helper
                 Console.WriteLine(sum);
                 return;
             }
+
             int num;
             bool result = int.TryParse(list[index], out num);
             index++;
@@ -146,13 +188,19 @@ namespace GroupWork.Helper
                 Sum(list, ref sum, index);
             }
         }
+
+        // Qiymətləndirmə: 20/20
+        // Kaş ki birdən çox boşluq göndərilmə halı da nəzər alınsaydı )
+        #endregion
+
+        #region Task4
         public static void Sum15()
         {
             //task 4 nazrin
-            int[] arr = { 1, 5, 9, 6, 4, 6 };
+            int[] arr = { 1, 5, 9, 6, 4, 7, 2, 10, 32, 40 };
             int sum = 15;
 
-            for (int i = 0; i < arr.Length - 1; i++)
+            for (int i = 0; i < arr.Length - 1; i++) //-1 yerinə aşağıdakilərə uyğun olaraq özündən sonrakiləri götürməsi üçün -3 də verilə bilərdi
             {
                 for (int j = i + 1; j < arr.Length - 2; j++)
                 {
@@ -166,10 +214,17 @@ namespace GroupWork.Helper
                 }
             }
         }
+
+        // Qiymətləndirmə:
+        // Dəyişənlər parametrdən götürülməliydi indi sadəcə eyni dəyişənçün işləyir
+        // Nəticə: 15/20
+        #endregion
+
+        #region Task16
         public static void Binary()
         {
             //16 nazrin
-            int number = 10;
+            int number = 5;
             string number2 = "";
             int temp = number;
 
@@ -182,8 +237,17 @@ namespace GroupWork.Helper
 
             }
             Console.WriteLine(number2);
-
         }
+
+        // Qiymətləndirmə: 10/15
+        // Hər dəyişən parametrdən götürülməliydi
+        #endregion
+
+
+
+
+        #region Task15
+
         public static void Anaqram()
         {
             // 15)Verilmis iki sozu anaqram olub - olmadigini tapin. kutais
@@ -210,7 +274,7 @@ namespace GroupWork.Helper
                     arr2[i] = word2[i];
                 }
 
-                Array.Sort(arr1);
+                Array.Sort(arr1); // hazır metodlardan istifadə olunub, baldan düşülür
                 Array.Sort(arr2);
 
                 string sortWord1 = new string(arr1);
@@ -225,11 +289,18 @@ namespace GroupWork.Helper
                 }
             }
         }
+        // Qiymətləndirmə:
+        // Kiçik mənfi cəhət: hazır metodlar (`Array.Sort`) istifadə olunub
+        // result dəyişəni gərəksizdir, birbaşa "True" çap etmək olardı
+        // Nəticə: 15/20
+        #endregion
+
+        #region Task21
         public static void Factorial()
         {
             //kutais
-            int n = 3;
-            int hasil = Factorial(n);
+            int n = 10;
+            long hasil = Factorial(n);
             Console.WriteLine(hasil);
             static int Factorial(int n)
             {
@@ -239,11 +310,21 @@ namespace GroupWork.Helper
                 }
                 if (n < 0)
                 {
-                    Console.WriteLine("Bu ededin factoriali hesablanmir.");
+                    Console.WriteLine("Bu ededin factoriali hesablanmir."); // return edilməliydi sonsuz dövr yaranır belə
                 }
                 return n * Factorial(n - 1);
             }
         }
+
+        // Qiymətləndirmə:
+        // - Mənfi ədədlər üçün sonsuz dövr yaranır, çünki `return` yoxdur
+        // - `n` dəyişəni parametrdən götürülməliydi
+        // - İdeya düzgündür, rekursiv yanaşma istifadə olunub. Böyük ədədlər üçün integerin daşıma qabiliyyəti problem çıxara bilir amma kiçik ədədlər üçün işləyir.
+        // Nəticə: 15/20
+
+        #endregion
+
+        #region Task2
         public static void Difference(params int[]numbers) //2=>Elchin
         {
 
@@ -266,6 +347,14 @@ namespace GroupWork.Helper
             num2 = numbers[numbers.Length - 1] - numbers[0];
             Console.WriteLine(num2);
         }
+        // Qiymətləndirmə: 0/10
+        // Tapşırıqda ARDICIL ədədlərdən söhbət gedir, yəni arraydəki ən kiçik və ən böyük yox.
+        // Tapşırığa uyğun deyil.
+
+        #endregion
+
+
+        #region Task11
         public static void IsOdd() //11=>Elchin
         {
             int num;
@@ -283,6 +372,12 @@ namespace GroupWork.Helper
                 }
             }
         }
+
+        // Qiymətləndirmə: 5/5
+        // 0 olmama şərti yoxlanılıb amma else hissəsi yazılmayıb, yəni 0 daxil ediləndə heç nə etmir
+        #endregion
+
+        #region Task12
         public static void CustomSum(params int[] num) //12=>Elchin
         {
             int sum = 0;
@@ -292,7 +387,12 @@ namespace GroupWork.Helper
             }
             Console.WriteLine(sum);
         }
-        public static int EvenOddDifference( params int[] arr)
+        // Qiymətləndirmə: 5/5
+        #endregion
+
+
+        #region Task6
+        public static int EvenOddDifference(params int[] arr)
         {
             int evenCount = 0;
             int oddCount = 0;
@@ -308,6 +408,8 @@ namespace GroupWork.Helper
             else
                 return oddCount - evenCount;
         }
+        // Qiymətləndirmə: 10/10
+        #endregion
 
     }
 }
